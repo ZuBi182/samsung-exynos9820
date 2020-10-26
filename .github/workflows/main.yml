@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        model: [ "G973F" ]
+        model: [ "G975F" ]
 
     steps:
     - uses: actions/checkout@v2
@@ -47,12 +47,20 @@ jobs:
                      toolchain=$TOOLCHAIN      \
                      +magisk                   \
                      +nohardening              \
-                     +ttl                      \
-                     +wireguard                \
+                     -ttl                      \
+                     +tcp_westwood             \
+                     +nodebug                  \
+                     +noaudit                  \
+                     +size                     \
+                     +1000hz                   \
+                     +fake_config              \
+                     -wireguard                \
+                     +noswap                   \
                      +cifs                     \
+                     +nozram                   \
                      +sdfat                    \
                      +ntfs                     \
-                     +morosound                \
+                     -morosound                \
                      +boeffla_wl_blocker       \
         2>&1 | tee config.info
     - name: Kernel Build

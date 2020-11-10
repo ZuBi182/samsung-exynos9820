@@ -51,9 +51,14 @@ jobs:
                      +tcp_westwood             \
                      +nodebug                  \
                      +noaudit                  \
+                     +size                     \
+                     +1000hz                   \
                      +fake_config              \
                      -wireguard                \
+                     +noswap                   \
+                     +noksm                    \
                      +cifs                     \
+                     +nozram                   \
                      +sdfat                    \
                      +ntfs                     \
                      -morosound                \

@@ -52,7 +52,6 @@ jobs:
                      +nodebug                  \
                      +noaudit                  \
                      +size                     \
-                     +noatime                  \
                      +io_bfq                   \
                      +fake_config              \
                      -wireguard                \

@@ -43,7 +43,7 @@ jobs:
       run: |
         ./cruelbuild config                    \
                      model=${{ matrix.model }} \
-                     name="CRUEL-v3.8"         \
+                     name="ZuBiMOD-v3.8"         \
                      toolchain=$TOOLCHAIN      \
                      +magisk                   \
                      +nohardening              \
